@@ -13,4 +13,7 @@ t2010 = (html %>%
          html_table())[[1]]
 
 globesScrap = rbind(t2000, t2010)
+globesScrap$isWinner = FALSE
+globesScrap$isWinner[match(unique(globesScrap$Year), globesScrap$Year)] = TRUE
+
 save(globesScrap, file = "../data/globesScrap.RData")
