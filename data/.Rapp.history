@@ -1,1 +1,2 @@
 load("/Users/yujiangzhen/Google Drive/03Fall16/sta841/project/oscars/data/IMDBdata.rdata")
+load("/Users/yujiangzhen/Google Drive/03Fall16/sta841/project/oscars/data/Oscars96_06.RData")
