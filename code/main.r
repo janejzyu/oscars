@@ -14,4 +14,11 @@ getIndicator = function(genList) {
 indicators = t(as.matrix(sapply(IMDBdata$genres, getIndicator)))
 IMDBdata = cbind(IMDBdata, indicators)
 
+t = t[3103:3110,2:36]
+indicators = t(as.matrix(sapply(t$genres, getIndicator)))
+t = cbind(t, indicators)
+
+IMDBdata[3103:3110, ] = t
 save(IMDBdata, file = "../data/IMDBdata_gIndicator.RData")
+
+
